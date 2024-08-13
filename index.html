@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Senaibuster</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="layout-grid">
+      <header id="header">
+        <h1 id="titulo">SENAIBUSTER</h1>
+      </header>
+
+      <main id="main-grid">
+        <div class="title-div">
+          <h2 id="title-body">Listagem de Filmes</h2>
+        </div>
+        <div class="list-body">
+          <div class="div-select">
+            <label class="label-text" for="genero">Filtre por:</label>
+      
+            <button onclick="FiltroAlfabetico()"> Alfabetico</button>
+            <button onclick="FiltroAno()">Ano</button>
+            
+          </div>
+
+          <div class="div-list">
+            <table>
+              <thead id="table-head">
+                <tr id="border-table">
+                  <th scope="col" class="title-table name-cell">Nome</th>
+                  <th scope="col" class="title-table genero-cell">Genero</th>
+                  <th scope="col" class="title-table time-cell">Duracao</th>
+                  <th scope="col" class="title-table year-cell">Ano</th>
+                  <th scope="col" class="title-table-invisible button-cell">
+                    botao
+                  </th>
+                </tr>
+              </thead>
+            </table>
+            <table id="lista" class="table-collapse">
+            </table>
+          </div>
+        </div>
+
+        <div class="title-div">
+          <h2 id="title-body">Filmes Alugados</h2>
+        </div>
+        <div class="list-body2">
+          <div class="div-list">
+            <table>
+              <thead id="table-head">
+                <tr id="border-table">
+                  <th scope="col" class="title-table name-cell">Nome</th>
+                  <th scope="col" class="title-table genero-cell">Genero</th>
+                  <th scope="col" class="title-table time-cell">Duracao</th>
+                  <th scope="col" class="title-table year-cell">Ano</th>
+                  <th scope="col" class="title-table button-cell">Devolver</th>
+                </tr>
+              </thead>
+            </table>
+            <table class="table-collapse"  id="listaAlugados">
+              <!-- <tr class="content-table-row">
+                <td class="content-table-start name-cell">Homem-Aranha</td>
+                <td class="content-table genero-cell">Ação</td>
+                <td class="content-table time-cell">2h01m</td>
+                <td class="content-table">2002</td>
+                <td class="content-table-end button-cell">06/09/2024</td>
+              </tr>
+              <tr class="content-table-row">
+                <td class="content-table-start name-cell">Homem-Aranha</td>
+                <td class="content-table genero-cell">Ação</td>
+                <td class="content-table time-cell">2h01m</td>
+                <td class="content-table year-cell">2002</td>
+                <td class="content-table-end button-cell">06/09/2024</td>
+              </tr>
+              <tr class="content-table-row">
+                <td class="content-table-start name-cell">Homem-Aranha</td>
+                <td class="content-table genero-cell">Ação</td>
+                <td class="content-table time-cell">2h01m</td>
+                <td class="content-table year-cell">2002</td>
+                <td class="content-table-end button-cell">06/09/2024</td>
+              </tr> -->
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
